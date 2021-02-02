@@ -30,11 +30,13 @@ $(document).ready(function(){
   $('.popup__close').click(function(){
     $('.window').removeClass('window-active');
   });
+
   $('.burger').click(function(){
     $('.window2').toggleClass('window2-active')
     $('.header__nav').toggleClass('header__nav-active')    
     $('.burger').toggleClass('active-burger')  
     $('body').toggleClass('body-fixed');
+    $('.icon-certificate').toggleClass('active');
   });  
 
   $('.blogaside__item').click(function(){
