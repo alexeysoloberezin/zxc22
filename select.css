@@ -45,7 +45,7 @@
 .select__value span:before {
 	content: '';
 	position: absolute;
-	bottom:0px;
+	bottom: 0px;
 	left: 0;
 	display: block;
 	width: 100%;
@@ -107,7 +107,13 @@
 	cursor: pointer;
 	padding: 10px 10px;
 	margin: 0px 0px 0px 0px;
+	transition: .25s;
 
+
+}
+
+.select__option:hover {
+	color: #002cba;
 }
 
 .select._active {

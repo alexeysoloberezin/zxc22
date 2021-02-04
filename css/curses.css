@@ -1509,11 +1509,13 @@ body {
 
 .courses__box-txt {
   margin-left: 8px;
-  font-size: 15px;
+  font-size: 16px;
   color: #000000;
   white-space: nowrap;
-  font-weight: 500;
   line-height: 0.8;
+  font-weight: 700;
+  font-family: 'Mazzard';
+  transform: translateY(0px);
 }
 
 .allcourses .courses__boxes {
@@ -1643,8 +1645,16 @@ body {
   transform: translateY(-15px)
 }
 
+.courses__name {
+  transition: .25s;
+}
+
+.allcourses .courses__slide:hover .courses__name {
+  color: #002cba;
+}
+
 .allcourses .courses__slide:hover .courses__image img {
-  filter: brightness(110%)
+  filter: brightness(120%)
 }
 
 .allcourses .courses__boxes {
@@ -1687,7 +1697,9 @@ body {
   border-radius: 3px;
   letter-spacing: 1.1px;
   height: 40px;
-  font-size: 19px;
+  font-size: 22px;
+  padding-bottom: 4px;
+  font-family: "Mazzard";
 }
 
 .allcourses .courses__slide-btn:hover {
@@ -1905,7 +1917,8 @@ body {
 
 .footer__gift img {
   object-fit: contain;
-  margin-left: 4px
+  margin-left: 9px;
+  transform: translateY(-1px);
 }
 
 .footer__list {
@@ -2086,11 +2099,6 @@ body {
 
 .footer__link {
   font-weight: 500;
-
-}
-
-.footer__link.orange {
-  color: #ff3a00;
 
 }
 
@@ -2419,7 +2427,7 @@ body {
 
 @media (max-width:550px) {
   .allcourses .courses__slide-btn {
-    font-size: 15px
+    font-size: 19px;
   }
 
   .allcourses .courses__subtitle {
@@ -2503,7 +2511,7 @@ body {
   }
 
   .allcourses .courses__slide-btn {
-    font-size: 17px;
+    font-size: 20px;
     margin-bottom: 34px
   }
 
@@ -2704,4 +2712,13 @@ body {
 .icon-certificate.active img {
   transition: .5s;
   transform: translateX(250px);
+}
+
+
+.orange {
+  transition: .25s;
+}
+
+.orange:hover {
+  color: #ff3a00 !important;
 }
