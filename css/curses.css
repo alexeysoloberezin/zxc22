@@ -1765,7 +1765,7 @@ body {
 
 .allcourses .courses__subtitle {
   margin-bottom: 6px;
-  font-size: 38px;
+  font-size: 34px;
   letter-spacing: 0.65px
 }
 
@@ -2516,7 +2516,7 @@ body {
   }
 
   .allcourses .courses__subtitle {
-    font-size: 38px;
+    font-size: 34px;
     line-height: 85%;
     margin-top: 7px
   }
