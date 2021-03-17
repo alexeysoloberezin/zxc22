@@ -43,6 +43,33 @@ responsive: [
   }
 ]
 });
+$('.content-items').slick({
+  slidesToShow: 3,
+  slidesToScroll: 3,   
+  responsive: [
+    {
+      breakpoint: 1320,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2,    
+        dots: true,
+        arrows: false,             
+      }
+      
+    },
+    {
+      breakpoint: 700,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,    
+        dots: true,
+        arrows: false,             
+      },
+      
+    }
+  ]
+  });
+
 $('.recalll__slider').slick({
 slidesToShow: 2,
 slidesToScroll: 2,  
