@@ -1049,7 +1049,6 @@ video {
 
 
 .block-corporate-training {
-  font-family: pt sans !important;
   margin-top: 80px;
   margin-bottom: 80px;
 }
@@ -1112,9 +1111,7 @@ video {
   cursor: pointer
 }
 
-.block-corporate-training .title {
-  color: rgba(0, 0, 0, .7) !important;
-}
+
 
 .block-corporate-training .content-items .slick-list {
   -webkit-transform: translate3d(0, 0, 0);
@@ -1172,7 +1169,7 @@ video {
 .block-corporate-training .content-items .content-item .content-item-container .content-item-heading {
   display: flex;
   color: #000;
-  font-size: 20px;
+  font-size: 19px;
   line-height: 22px;
   font-weight: 700;
   padding-bottom: 24px
@@ -1201,7 +1198,7 @@ video {
 .block-corporate-training .content-items .content-item .content-item-heading-text .content-item-heading-text-desc {
   font-size: 16px;
   line-height: 24px;
-  font-weight: 300
+  font-weight: 400
 }
 
 .block-corporate-training .content-items .content-item .content-item-image img {
@@ -1911,6 +1908,7 @@ video {
   border-bottom: 1px dashed #000;
   line-height: 21px;
   margin-left: 6px;
+  color: #000;
   transition: 0.3s;
 }
 
@@ -2055,8 +2053,7 @@ video {
 .programm__list h4 {
   font-size: 22px;
   color: #001fac;
-  font-weight: 500;
-
+  font-weight: 400;
 }
 
 .programm__list p {
@@ -2129,6 +2126,9 @@ video {
   height: 414px;
 }
 
+.video .video__wrapper {
+  margin-top: 45px;
+}
 
 
 .recalll {
@@ -4985,6 +4985,7 @@ video {
 
   .programm__list h4 {
     font-size: 16px;
+    font-weight: 500 !important;
   }
 
 
@@ -5037,7 +5038,7 @@ video {
   }
 
   .header__info {
-    padding-top: 105px;
+    padding-top: 50px;
   }
 
   .comment__wrapper {
@@ -5362,6 +5363,7 @@ video {
 
   .resultcurse__info p {
     max-width: 485px;
+    font-size: 16px;
   }
 
   .resultcurse__inner {
@@ -6080,7 +6082,7 @@ video {
   }
 
   .header__info {
-    padding-top: 73px;
+    padding-top: 23px;
   }
 
   .header__info-list li {
