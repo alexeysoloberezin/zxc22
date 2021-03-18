@@ -1,3 +1,18 @@
+
+const navOffset = 140;
+$(window).scroll(function(){
+  
+  const scrolled = $(this).scrollTop();
+
+  if (scrolled > navOffset){
+    $('.header').addClass('header-fixed');
+  } else if (scrolled < navOffset){
+    $('.header').removeClass('header-fixed');
+  }
+});
+
+
+
 $('.header__call').click(function(){
   $('.window').addClass('window-active');
  });
@@ -14,18 +29,18 @@ $('.postfoter__btn').click(function(){
 });
 var myVideo = document.querySelector(".recalll__video-js");
 $('.video-poster__2 ').click(function(){      
-    $('.video-poster__2 ').removeClass('active');
-    myVideo.play();
-  });
-
+  $('.video-poster__2 ').removeClass('active');
+  $("#video2")[0].src += "?autoplay=1";   
+});
 var myVideo1 = document.querySelector(".main__video");
 $('.main__video-poster').click(function(){      
-    $('.main__video-poster').removeClass('active');
-    myVideo1.play();
-  });
+  $('.main__video-poster').removeClass('active');   
+    $("#video")[0].src += "?autoplay=1";    
+});
 $('.start-curse__close').click(function(){        
     $('.start-curse').removeClass('active');
   });
+  $('.payment__input-phone').mask("+7 (999) 99-99-999");
 $('.nearcurse__phone').mask("+7 (999) 99-99-999");
 $('.teachers__slider').slick({
 slidesToShow: 2,
@@ -99,6 +114,20 @@ responsive: [
   }
 ]   
 });
+$('#installmentplan').on('click', function () {
+  $('.payment__btn').removeClass('active');
+  if ( $(this).is(':checked') ) {    
+    $('.payment__btn-2').addClass('active');
+            // checkbox checked 
+  } else {
+    $('.payment__btn-1').addClass('active');
+      // checkbox unchecked 
+  }
+})
+$('.variants-btn').click(function(){        
+  $('.variants__block-1').removeClass('active');
+  $('.variants__block-2').addClass('active');
+});
 $('.burger').click(function(){
 $('.window2').toggleClass('window2-active')
 $('.header__nav').toggleClass('header__nav-active')    
@@ -106,5 +135,14 @@ $('.burger').toggleClass('active-burger')
 $('body').toggleClass('body-fixed');
 });
 $('.footer__list-title').click(function(){
-this.parentElement.classList.toggle('footer__list-view')
-});
+  this.parentElement.classList.toggle('footer__list-view');
+  $('.footer__list-space').addClass('active');
+  space()
+  });
+  function space(){
+    if($('.footer__list').hasClass('footer__list-view')){
+      $('.footer__list-space').addClass('active');
+    }else{
+      $('.footer__list-space').removeClass('active');
+    }
+  }  
