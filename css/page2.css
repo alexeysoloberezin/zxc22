@@ -1701,6 +1701,10 @@ video {
   cursor: pointer
 }
 
+.block-corporate-training .title {
+  color: rgba(0, 0, 0, .7) !important;
+}
+
 .block-corporate-training .content-items .slick-list {
   -webkit-transform: translate3d(0, 0, 0);
   -moz-transform: translate3d(0, 0, 0);
