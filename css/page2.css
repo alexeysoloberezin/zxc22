@@ -136,7 +136,7 @@ body {
 }
 
 .header__logo img {
-  object-fit: cover;
+  object-fit: contain;
 }
 
 .header__list {
@@ -817,6 +817,11 @@ video {
     width: 96%;
     padding: 35px 30px;
     min-width: 96%;
+  }
+
+  .header__logo {
+    flex-shrink: initial;
+    margin-left: -10px !important;
   }
 
   .popup__text {
@@ -2461,6 +2466,10 @@ video {
   margin-right: 5px
 }
 
+.payment__wrapper img {
+  width: 300px;
+}
+
 .payment__sber {
   display: flex;
   flex-direction: column;
@@ -2702,7 +2711,7 @@ video {
   }
 
   .payment__sber-title {
-    font-size: 17px;
+    font-size: 15px;
     line-height: 22px
   }
 
@@ -6074,7 +6083,7 @@ video {
   .icon-certificate {
     top: -64px;
     transform: scale(0.7);
-    right: -99px;
+    right: -78px;
   }
 
   .header__row-line:before {
@@ -6479,10 +6488,7 @@ video {
     margin-left: 23px;
   }
 
-  .resultcurse__info p {
-    font-size: 17px;
-    line-height: 22px;
-  }
+
 
   .resultcurse__mob-txt {
     margin-top: 13px;
