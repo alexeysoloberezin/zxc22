@@ -815,8 +815,13 @@ video {
 @media (max-width: 650px) {
   .popup {
     width: 96%;
-    padding: 35px 30px;
+    padding: 40px 30px 35px;
     min-width: 96%;
+  }
+
+  .popup__close {
+    top: 30px;
+    right: 40px;
   }
 
   .header__logo {
@@ -839,6 +844,15 @@ video {
   .popup__btn {
     height: 50px;
     font-size: 20px;
+  }
+}
+
+@media (max-width:330px) {
+
+  .popup .popup__btn,
+  .popup .wrappper-input,
+  .popup .wrappper-input input {
+    width: 100%;
   }
 }
 
@@ -2454,7 +2468,7 @@ video {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-family: TTFirsNeue;
+  font-family: 'TT Firs Neue';
   font-size: 19px;
   line-height: 1.2;
   font-weight: 500;
@@ -2463,7 +2477,8 @@ video {
 }
 
 .payment__wrapper p {
-  margin-right: 5px
+  margin-right: 5px;
+  font-family: 'TT Firs Neue';
 }
 
 .payment__wrapper img {
